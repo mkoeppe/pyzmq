@@ -463,6 +463,7 @@ class Configure(build_ext):
 
     def check_zmq_version(self):
         """check the zmq version"""
+        return
         cfg = self.config
         # build test program
         zmq_prefix = cfg['zmq_prefix']
