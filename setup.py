@@ -300,8 +300,6 @@ def settings_from_prefix(prefix=None):
                     settings['include_dirs'] += [pjoin(env, 'include')]
                     settings['library_dirs'] += [pjoin(env, 'lib')]
 
-        for path in settings['library_dirs']:
-            _add_rpath(settings, os.path.abspath(path))
     info(settings)
 
     return settings
